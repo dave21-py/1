@@ -98,7 +98,7 @@ h1 {
 }
 
 #intro-image {
-  margin: 2.7em 0 0 2em;
+  margin: 3em 0 0 2em;
   width: 12em;
   height: 12em;
   float: left;
@@ -178,6 +178,7 @@ h2 {
 
 .description {
   margin-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
 .list-item {
