@@ -334,15 +334,28 @@
     </div>
 
     <script>
-        // Isotope grid.
+        // Get the filter value from localStorage or use default
+        var defaultFilterValue = localStorage.getItem("filterValue") || ".publication";
+
+        // Isotope grid with initial filter applied
         var $grid = $(".grid").isotope({
             itemSelector: ".list-item",
             layoutMode: "fitRows",
             transitionDuration: 0,
             stagger: 10,
+            filter: defaultFilterValue, // Apply filter immediately
             getSortData: {
                 category: "[data-category]",
             },
+        });
+
+        // Update button states to match the initial filter
+        $(".button-group .button").each(function () {
+            if ($(this).attr("data-filter") === defaultFilterValue) {
+                $(this).addClass("is-checked");
+            } else {
+                $(this).removeClass("is-checked");
+            }
         });
 
         // Bind filter button click.
@@ -354,29 +367,6 @@
                 .addClass("is-checked")
                 .siblings()
                 .removeClass("is-checked");
-        });
-
-        // Function to initialize Isotope and set the correct button state
-        function initIsotope() {
-            var defaultFilterValue =
-                localStorage.getItem("filterValue") || ".publication"; // Default to 'Projects'
-
-            // Apply the filter to Isotope
-            $grid.isotope({ filter: defaultFilterValue });
-
-            // Update button states
-            $(".button-group .button").each(function () {
-                if ($(this).attr("data-filter") === defaultFilterValue) {
-                    $(this).addClass("is-checked");
-                } else {
-                    $(this).removeClass("is-checked");
-                }
-            });
-        }
-
-        // Call the initialization function on page load
-        $(window).on("load", function () {
-            initIsotope();
         });
     </script>
 </body>
