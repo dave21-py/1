@@ -53,15 +53,14 @@
                 <p>
                     Hi there! I’m a Computer Science student at
                     <a href="https://www.bju.edu/">Bob Jones University </a>
-                    with a focus on machine learning, applied AI,
-                    and frontend development with generative AI tools. My work
+                    with a focus on machine learning, and applied AI. My work
                     spans intent classification, predictive modeling, and
                     modern AI-native interfaces. These days, I’m continuing
                     to deepen my skills across machine learning, deep
                     learning, and frontend development.
                 </p>
                 <br />
-                <a href="https://dave21-py.github.io/1/david_resumee.pdf">Resume</a>
+                <a href="https://dave21-py.github.io/1/david_resumee.pdf">CV</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.linkedin.com/in/david-geddam">LinkedIn</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -126,6 +125,28 @@
 
             </div>
 
+            <!--Student Performance-->
+            <div class="list-item publication" data-category="publication">
+                <a href="#" class="thumbnail">
+                    <video class="preview" playsinline muted autoplay loop>
+                        <source src="images/student.mp4" type="video/mp4" />
+                    </video>
+                </a>
+                <div class="project-description">
+                    <h3>
+                        <a href="https://github.com/dave21-py/mlproject">
+                            Student performance prediction
+                        </a>
+                    </h3>
+                    <ul>
+                        <li>Developed a prod-ready machine learning pipeline to predict student test scores, handling
+                            the full lifecycle from data ingestion and transformation to model evaluation.</li>
+                        <li>Implemented a modular codebase in python that trains and compares multiple regression models
+                            (Random Forest, XGBoost, CatBoost) to select the best-performing algorithm.</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Bible -->
             <div class="list-item publication" data-category="publication">
                 <a href="#" class="thumbnail">
@@ -137,22 +158,15 @@
                             Fine tuning based on kjv dataset
                         </a>
                     </h3>
-                    <p>
-                        Fine-tuned a llm dubbed 'BibleGPT', to generate
-                        biblically-styled text, demonstrating expertise in
-                        natural language processing and transfer learning.
-                        my tasks included data preparation from the kjv
-                        dataset, transforming raw text into structured
-                        format for model training. Implemented
-                        Parameter-Efficient Fine-Tuning (PEFT) with LoRA on
-                        a google/gemma-2-2b-it model, leveraging 8-bit
-                        quantization for memory optimization. Successfully
-                        trained the model using Hugging Face's Trainer API,
-                        showcasing its ability to generate contextually
-                        relevant responses to biblical queries. Concluded
-                        the project by deploying the fine-tuned model and
-                        tokenizer to the Hugging Face Hub.
-                    </p>
+                    <ul>
+                        <li>Fine-tuned a Large Language Model (LLM) to generate biblically-styled text, used natural
+                            language processing
+                            (NLP) and transfer learning techniques.</li>
+                        <li>Implemented Parameter-Efficient Fine-Tuning (PEFT) with LoRA on gemma-2-2b model.</li>
+                        <li>Trained the model using Hugging Face’s Trainer API and deployed the fine-tuned model and
+                            tokenizer to
+                            Hugging Face Hub.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -168,21 +182,14 @@
                             (GitHub)
                         </a>
                     </h3>
-                    <p>
-                        Conducted a comparative analysis of machine models
-                        for intent classification. Designed and benchmarked
-                        three models—TF-IDF with
-                        <strong>Logistic Regression, LSTM, and a fine-tuned
-                            DistilBERT Transformer</strong>
-                        —to evaluate performance under resource constraints.
-                        Diagnosed several overfitting challenges in the deep
-                        learning models caused by limited custom data,
-                        highlighting the trade-offs b/w model complexity and
-                        dataset size. Concluded that the baseline TF-IDF
-                        model provided the optimal balance, achieving
-                        <strong>67 percent accuracy</strong> while being 20x
-                        smaller and 100x faster than the LSTM.
-                    </p>
+                    <ul>
+                        <li>Conducted an experiment comparing TF-IDF, LSTM, and DistilBERT models to analyze the
+                            trade-offs
+                            between model complexity and data availability.</li>
+                        <li>Hypothesized and proved that increasing dataset size to 400 examples would unlock the
+                            Transformer’s potential,
+                            ultimately achieving a state-of-the-art 87.34% accuracy.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -197,22 +204,16 @@
                             Bangalore House Price Prediction (GitHub)
                         </a>
                     </h3>
-                    <p>
-                        Deployed a full stack real estate price prediction
-                        application, following a complete data science
-                        project lifecycle. Performed data cleaning, feature
-                        engineering and outlier removal using
-                        <strong>Pandas, Numpy, and Matplotlib</strong>.
-                        Trained a <strong>Scikit-learn</strong> linear
-                        regression model and evaluated using
-                        KCrossValidation score. Designed UI using
-                        <strong>HTML, CSS and Javascript</strong>. Automated
-                        deployment to
-                        <strong>Microsoft Azure</strong> production, using
-                        <strong>CI/CD</strong> pipeline with
-                        <strong>GitHub Actions</strong>, running on Gunicorn
-                        production server.
-                    </p>
+                    <ul>
+                        <li>Deployed a full-stack real estate price prediction application, following a complete data
+                            science project lifecycle
+                            from data cleaning to deployment.</li>
+                        <li>Performed feature engineering and outlier removal using Pandas and NumPy, and visualized
+                            data trends with
+                            Matplotlib.</strong>.</li>
+                        <li>Trained a Linear Regression model using Scikit-learn and validated performance using K-Fold
+                            Cross-Validation.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -227,18 +228,15 @@
                             VibeOS - A Conversational AI Desktop (GitHub)
                         </a>
                     </h3>
-                    <p>
-                        Developed an experimental, browser-based "desktop
-                        environment", featuring dynamic window management,
-                        and integrated AI tools. Built with
-                        <strong>HTML, CSS5, Javascript</strong>, and powered
-                        by the Google Gemini API, with AI-native user
-                        experiences and integration of multiple APIs
-                        (OpenWeather, Web Speech API) to deliver minimal
-                        agentic functionalities like AI trip planning and
-                        academic assistance within a fluid desktop
-                        environment.
-                    </p>
+                    <ul>
+                        <li>Developed an experimental, browser-based "desktop environment", featuring dynamic window
+                            management, and integrated AI tools.</li>
+                        <li>Built with <strong>HTML, CSS5, Javascript</strong>, and powered by the Google Gemini API,
+                            with AI-native user experiences.</li>
+                        <li>Integrated multiple APIs (OpenWeather, Web Speech API) to deliver minimal agentic
+                            functionalities like AI trip planning and academic assistance within a fluid desktop
+                            environment.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -253,15 +251,14 @@
                             VisiGen – AI Image Generator (GitHub)
                         </a>
                     </h3>
-                    <p>
-                        Developed a <strong>Java-based</strong> desktop
-                        application that integrates with the
-                        <strong>stable diffusion API</strong> to generate
-                        near accurate images from natural language prompts.
-                        Designed the UI with <strong>JavaFX</strong> and
-                        managed API requests, demonstrating skills in front
-                        end GUI interface, with AI assisted development.
-                    </p>
+                    <ul>
+                        <li>Developed a <strong>Java-based</strong> desktop application that integrates with the
+                            <strong>stable diffusion API</strong> to generate near accurate images from natural language
+                            prompts.
+                        </li>
+                        <li>Designed the UI with <strong>JavaFX</strong> and managed API requests, demonstrating skills
+                            in front end GUI interface, with AI assisted development.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -277,16 +274,12 @@
                             (GitHub)
                         </a>
                     </h3>
-                    <p>
-                        Developed a fully responsive UI with multiple
-                        controls and multiple screens, enhancing user
-                        engagement and gameplay experience.
-                        <strong>Collaborated with team members</strong>, on
-                        core game mechanics, frontend development and
-                        applied JavaFX GUI design and
-                        <strong>OOD</strong> principles, reducing user
-                        errors by 30% and improving game stability by 40%.
-                    </p>
+                    <ul>
+                        <li>Developed a fully responsive UI with multiple controls and multiple screens, enhancing user
+                            engagement and gameplay experience.</li>
+                        <li><strong>Collaborated with team members</strong>, on core game mechanics, frontend
+                            development and applied JavaFX GUI design and <strong>OOD</strong> principles.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -301,13 +294,12 @@
                             SpaceCam- Image enabled Weather Balloon Project
                         </a>
                     </h3>
-                    <p>
-                        Lead for electronics team. Designed and implemented
-                        a cost-effective, robust tracking system integrating
-                        APRS transmitters, GPS receivers, antennas, and
-                        power management, achieving 100% tracking accuracy
-                        for up to 48 hours.
-                    </p>
+                    <ul>
+                        <li>Lead for electronics team.</li>
+                        <li>Designed and implemented a cost-effective, robust tracking system integrating APRS
+                            transmitters, GPS receivers, antennas, and power management.</li>
+                        <li>Achieved 100% tracking accuracy for up to 48 hours.</li>
+                    </ul>
                 </div>
             </div>
 

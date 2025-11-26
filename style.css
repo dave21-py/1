@@ -412,3 +412,16 @@ h3 a:hover {
     bottom: 0;
     line-height: 2.5em;
 }
+
+.project-description ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin-top: 0.5em;
+    color: #a0a8b0;
+}
+
+.project-description li {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 0.25em;
+}
