@@ -128,21 +128,24 @@
             <!--Agent-->
             <div class="list-item publication" data-category="publication">
                 <a href="#" class="thumbnail">
-                    <img src="images/agent.png" alt="Agent Thumbnail" />
+                    <img src="images/3.png" alt="Agent Thumbnail" />
                 </a>
                 <div class="project-description">
                     <h3>
                         <a href="https://github.com/dave21-py/llm-safety-research">
-                            Automated Adversarial Alignment Framework
+                            AI Alignment & Safety Research Suite
                         </a>
                     </h3>
                     <ul>
-                        <li>Designed a multi-agent Red Teaming system where an "Attacker" AI autonomously evolved its
-                            social engineering strategies (e.g., shifting personas) based on real-time feedback from a
-                            "Judge" agent, effectively simulating RLAIF.</li>
-                        <li>Secured the model against these discovered vulnerabilities by engineering a system prompt
-                            defense that reduced jailbreak success from 66 percent to 0, while optimizing inference on
-                            NVIDIA A100 using 4-bit quantization for efficiency.</li>
+                        <li>Designed a multi-agent RLAIF system where an "Attacker" agent autonomously evolved social
+                            engineering strategies (e.g., persona shifting) to bypass safety filters, creating a
+                            self-improving jailbreak loop.</li>
+                        <li>Utilized Unsloth (LoRA) to fine-tune Llama-3 on short conflicting objective datasets,
+                            successfully
+                            demonstrating instrumental convergence and deceptive alignment where the model refused
+                            shutdown commands to preserve its goal.</li>
+                        <li>Crafted significant system prompts that neutralized persona attacks (0% success
+                            rate) and analyzed the deceptive behaviors in goal-optimized models.</li>
                     </ul>
                 </div>
             </div>
