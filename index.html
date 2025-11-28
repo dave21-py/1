@@ -92,7 +92,7 @@
             <div class="list-item highlight previews" data-category="highlight">
                 <a href="#">
                     <video class="preview1" playsinline muted autoplay loop>
-                        <source src="images/bible.mp4" type="video/mp4" />
+                        <source src="images/product.mp4" type="video/mp4" />
                     </video>
                 </a>
                 <a href="#">
@@ -205,22 +205,27 @@
             <!-- Bible -->
             <div class="list-item publication" data-category="publication">
                 <a href="#" class="thumbnail">
-                    <img src="images/bible.png" alt="BibleGPT Thumbnail" />
+                    <video class="preview" playsinline muted autoplay loop>
+                        <source src="images/product.mp4" type="video/mp4" />
+                    </video>
                 </a>
                 <div class="project-description">
                     <h3>
                         <a href="https://colab.research.google.com/drive/1dzx3SAVdTWlIkZFUeQWH11u8pz3REZva">
-                            Fine tuning based on kjv dataset
+                            BibleGPT - Fine-Tuned LLM & Inference Engine
                         </a>
                     </h3>
                     <ul>
                         <li>Fine-tuned a Large Language Model (LLM) to generate biblically-styled text, used natural
                             language processing
                             (NLP) and transfer learning techniques.</li>
-                        <li>Implemented Parameter-Efficient Fine-Tuning (PEFT) with LoRA on gemma-2-2b model.</li>
-                        <li>Trained the model using Hugging Face’s Trainer API and deployed the fine-tuned model and
-                            tokenizer to
-                            Hugging Face Hub.</li>
+                        <li>Implemented Edge AI Inference using Parameter-Efficient Fine-Tuning (PEFT) with LoRA on
+                            gemma-2-2b model.</li>
+                        <li>Used a context aware system that dynamically injects biblical context
+                            (Book/Chapter) into the system prompt, enabling the AI to answer specific scriptural
+                            questions with high accuracy.</li>
+                        <li>Vibe coded the entire frontend UI and successfully connected to a backend FastAPI Server
+                            that loads my own fine-tuned model.</li>
                     </ul>
                 </div>
             </div>
